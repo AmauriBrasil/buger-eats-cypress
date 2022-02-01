@@ -1,0 +1,52 @@
+{
+    "signup": {
+        "name": "Amauri Brasil",
+        "cpf": "00000014141",
+        "email": "brasil@hotmail.com",
+        "whatsapp": "11941412323",
+        "address": {
+            "postalcode": "02308200",
+            "street": "Travessa Impressões do Crepúsculo",
+            "number": "7",
+            "details": "A",
+            "district": "Vila Mazzei",
+            "city_state": "São Paulo/SP"
+        },
+        "delivery_method": "Moto",
+        "cnh": "cnh-digital.jpg"
+    },
+
+    "cpf_inv": {
+        "name": "Amauri Brasil",
+        "cpf": "00000014ABC",
+        "email": "brasil@hotmail.com",
+        "whatsapp": "11941412323",
+        "address": {
+            "postalcode": "02308200",
+            "street": "Travessa Impressões do Crepúsculo",
+            "number": "7",
+            "details": "A",
+            "district": "Vila Mazzei",
+            "city_state": "São Paulo/SP"
+        },
+        "delivery_method": "Moto",
+        "cnh": "cnh-digital.jpg"
+    },
+
+    "email_inv": {
+        "name": "Amauri Brasil",
+        "cpf": "00000014141",
+        "email": "abc.com.br",
+        "whatsapp": "11941412323",
+        "address": {
+            "postalcode": "02308200",
+            "street": "Travessa Impressões do Crepúsculo",
+            "number": "7",
+            "details": "A",
+            "district": "Vila Mazzei",
+            "city_state": "São Paulo/SP"
+        },
+        "delivery_method": "Moto",
+        "cnh": "cnh-digital.jpg"
+    }
+}
