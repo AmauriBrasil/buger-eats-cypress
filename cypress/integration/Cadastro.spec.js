@@ -9,7 +9,7 @@ describe('Cadastro', () => {
         })
     }) */
    
-    it('Usuário deve se tornar um entregador', function () {
+    it.skip('Usuário deve se tornar um entregador', function () {
 
         var deliver = signupFactory.deliver()
 
@@ -33,7 +33,7 @@ describe('Cadastro', () => {
         signupPage.alertMessageShouldBe('Oops! CPF inválido')     
     })
 
-    it('Email inválido', function () {
+    it.skip('Validar email inválido', function () {
 
         var deliver = signupFactory.deliver()
 
@@ -43,5 +43,17 @@ describe('Cadastro', () => {
         signupPage.fillForm(deliver)
         signupPage.submit()
         signupPage.alertMessageShouldBe('Oops! Email com formato inválido.')            
+    })
+
+    it('Verificar e validar campos obrigatórios', function () {
+        signupPage.go()
+        signupPage.submit()
+        signupPage.alertMessageShouldBe('É necessário informar o nome')
+        signupPage.alertMessageShouldBe('É necessário informar o CPF')
+        signupPage.alertMessageShouldBe('É necessário informar o email')
+        signupPage.alertMessageShouldBe('É necessário informar o CEP')
+        signupPage.alertMessageShouldBe('É necessário informar o número do endereço')
+        signupPage.alertMessageShouldBe('Selecione o método de entrega')
+        signupPage.alertMessageShouldBe('Adicione uma foto da sua CNH')
     })
 })
