@@ -21,7 +21,7 @@ describe('Cadastro', () => {
         signupPage.modalContentShouldBe(expectedMessage)
     })
 
-    it('Cpf inválido', function () {
+    it.skip('Validar cpf inválido', function () {
 
         var deliver = signupFactory.deliver()
 
