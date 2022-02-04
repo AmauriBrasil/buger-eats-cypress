@@ -9,7 +9,7 @@ describe('Cadastro', () => {
         })
     }) */
    
-    it('Usuário deve se tornar um entregador', function () {
+    it.only('Usuário deve se tornar um entregador', function () {
 
         var deliver = signupFactory.deliver()
 
@@ -30,7 +30,7 @@ describe('Cadastro', () => {
         signupPage.go()
         signupPage.fillForm(deliver)
         signupPage.submit()
-        signupPage.alertMessageShouldBe('Oops! CPF inválido')     
+        signupPage.alertMessageShouldBe('Oops! CPF inválido')
     })
 
     it('Validar email inválido', function () {
